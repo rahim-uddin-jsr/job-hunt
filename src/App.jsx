@@ -18,7 +18,11 @@ function App() {
           path: "/",
           element: <Home />,
         },
-        { path: "/applied-jobs", element: <AppliedJobs /> },
+        {
+          path: "/applied-jobs",
+          element: <AppliedJobs />,
+          loader: () => fetch("featuredJobs.json"),
+        },
         { path: "/blog", element: <Blog /> },
         {
           path: "/job-details/:id",

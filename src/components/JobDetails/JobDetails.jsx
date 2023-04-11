@@ -8,6 +8,7 @@ import {
 import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Header from "../../sheared/Header";
+import { addToDb } from "../../utilities/fakeDB";
 
 const JobDetails = () => {
   const [details, setDetails] = useState({});
@@ -31,6 +32,11 @@ const JobDetails = () => {
     job_title,
     contact_information,
   } = details;
+
+  const handleApplyJob = () => {
+    addToDb(id);
+    alert("success");
+  };
   return (
     <>
       <Header>Job Details</Header>
@@ -109,7 +115,10 @@ const JobDetails = () => {
             <span className="mb-4">Address : </span>
             <span className="opacity-50">{contact_information?.address}</span>
           </p>
-          <button className="btn btn-bg-gradient  border-0 mt-6">
+          <button
+            onClick={handleApplyJob}
+            className="btn btn-bg-gradient  border-0 mt-6"
+          >
             Apply Now
           </button>
         </div>
