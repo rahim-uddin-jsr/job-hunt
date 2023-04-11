@@ -1,13 +1,23 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
+import AppliedJobs from "./components/AppliedJobs/AppliedJobs";
+import Blog from "./components/Blog/Blog";
+import Home from "./components/Home/Home";
+import Main from "./Layout/Main/Main";
 
 function App() {
-  return (
-    <div className="btn-group">
-      <button className="btn btn-active">Button</button>
-      <button className="btn">Button</button>
-      <button className="btn">Button</button>
-    </div>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Main />,
+      children: [
+        { path: "/", element: <Home /> },
+        { path: "/applied-jobs", element: <AppliedJobs /> },
+        { path: "/blog", element: <Blog /> },
+      ],
+    },
+  ]);
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
 export default App;
