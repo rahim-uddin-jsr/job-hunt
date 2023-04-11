@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "./Header";
+import JobCategorys from "./JobCategorys";
 
 const Home = () => {
   return (
     <>
       <Header></Header>
-      <h2>this is Home</h2>
+      <JobCategorys />
     </>
   );
 };

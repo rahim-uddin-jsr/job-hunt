@@ -11,7 +11,10 @@ function App() {
       path: "/",
       element: <Main />,
       children: [
-        { path: "/", element: <Home /> },
+        {
+          path: "/",
+          element: <Home />,
+        },
         { path: "/applied-jobs", element: <AppliedJobs /> },
         { path: "/blog", element: <Blog /> },
       ],
