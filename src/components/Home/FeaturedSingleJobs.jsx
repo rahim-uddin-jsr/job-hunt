@@ -37,18 +37,18 @@ const FeaturedSingleJobs = ({ job }) => {
             stroke="currentColor"
             stroke-width="1"
           />
-          {location}{" "}
+          {location}
           <CurrencyDollarIcon
             class="h-6 me-2 ms-4 w-6 text-gray-500"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
             stroke-width="1"
-          />{" "}
+          />
           {salary}
         </div>
         <div className="card-actions mt-2">
-          <Link to={`details/${id}`}>
+          <Link to={`/job-details/${id}`}>
             <button className=" btn btn-bg-gradient border-0">
               View Details
             </button>
