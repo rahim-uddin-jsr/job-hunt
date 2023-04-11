@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Category from "./Category";
 
+
 const JobCategorys = () => {
   const [categories, setCategories] = useState([]);
   useEffect(() => {

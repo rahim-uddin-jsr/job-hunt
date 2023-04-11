@@ -1,4 +1,5 @@
 import React from "react";
+import FeaturedJobs from "./FeaturedJobs";
 import Header from "./Header";
 import JobCategorys from "./JobCategorys";
 
@@ -7,6 +8,7 @@ const Home = () => {
     <>
       <Header></Header>
       <JobCategorys />
+      <FeaturedJobs />
     </>
   );
 };

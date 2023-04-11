@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "company_logo": "https://i.ibb.co/rM9Zyw3/netflix-4-1.png",
+    "job_title": "Cybersecurity Analyst",
+    "company_name": "Example Tech Company 4",
+    "remote_or_onsite": "Onsite",
+    "location": "New York, NY",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$100,000 - $120,000",
+    "job_description": "We are seeking a skilled cybersecurity analyst to help us protect our systems and data from cyber attacks. The ideal candidate should have experience in threat detection, vulnerability management, and incident response.",
+    "job_responsibility": "Responsibilities include monitoring security alerts, analyzing security logs, conducting vulnerability assessments, and responding to security incidents.",
+    "educational_requirements": "Bachelor's degree in cybersecurity, computer science, or related field",
+    "experiences": "3+ years of experience in cybersecurity or related field",
+    "contact_information": {
+      "phone": "123-456-7890",
+      "email": "jobs@example.com"
+    }
+  },
+  {
+    "id": 2,
+    "company_logo": "https://i.ibb.co/gm9fwKs/tesla-9-1.png",
+    "job_title": "Computer Vision Engineer",
+    "company_name": "Example Tech Company 5",
+    "remote_or_onsite": "Remote",
+    "location": "Any",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$120,000 - $140,000",
+    "job_description": "We are looking for a computer vision engineer to help us develop cutting-edge image and video analysis systems. The ideal candidate should have experience in computer vision, deep learning, and image processing.",
+    "job_responsibility": "Responsibilities include designing and implementing computer vision algorithms, training deep learning models, and developing software for image and video analysis.",
+    "educational_requirements": "Master's degree or PhD in computer science or related field",
+    "experiences": "5+ years of experience in computer vision or related field",
+    "contact_information": {
+      "phone": "123-456-7890",
+      "email": "jobs@example.com"
+    }
+  },
+  {
+    "id": 3,
+    "company_logo": "https://i.ibb.co/17kkdhb/google-1-1-1.png",
+    "job_title": "Blockchain Developer",
+    "company_name": "Example Tech Company 6",
+    "remote_or_onsite": "Onsite",
+    "location": "London, UK",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "£60,000 - £80,000",
+    "job_description": "We are seeking a skilled blockchain developer to help us build and maintain secure and reliable blockchain systems. The ideal candidate should have experience in blockchain development, smart contract programming, and decentralized application design.",
+    "job_responsibility": "Responsibilities include designing and implementing blockchain solutions, writing smart contracts, and developing decentralized applications.",
+    "educational_requirements": "Bachelor's degree in computer science or related field",
+    "experiences": "3+ years of experience in blockchain development or related field",
+    "contact_information": {
+      "phone": "+44 123-456-7890",
+      "email": "jobs@example.com"
+    }
+  },
+  {
+    "id": 4,
+    "company_logo": "https://i.ibb.co/rM9Zyw3/netflix-4-1.png",
+    "job_title": "Software Developer",
+    "company_name": "Example Tech Company 1",
+    "remote_or_onsite": "Remote",
+    "location": "Any",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$80,000 - $100,000",
+    "job_description": "We are looking for a skilled software developer to join our team and help develop high-quality software solutions. The ideal candidate should have experience in Python, JavaScript, and cloud technologies.",
+    "job_responsibility": "Responsibilities include designing and implementing software solutions, collaborating with other developers and stakeholders, and participating in code reviews.",
+    "educational_requirements": "Bachelor's degree in computer science or related field",
+    "experiences": "3+ years of experience in software development",
+    "contact_information": {
+      "phone": "123-456-7890",
+      "email": "jobs@example.com"
+    }
+  },
+  {
+    "id": 5,
+    "company_logo": "https://i.ibb.co/8bQT3Qw/Group-10021.png",
+    "job_title": "Data Scientist",
+    "company_name": "Example Tech Company 2",
+    "remote_or_onsite": "Onsite",
+    "location": "Seattle, WA",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$100,000 - $120,000",
+    "job_description": "We are seeking a data scientist to help us analyze and interpret large sets of data. The ideal candidate should have experience in data modeling, machine learning, and statistical analysis.",
+    "job_responsibility": "Responsibilities include designing and executing experiments, analyzing and interpreting data, and developing predictive models.",
+    "educational_requirements": "Master's degree or PhD in data science, statistics, or related field",
+    "experiences": "3+ years of experience in data science or related field",
+    "contact_information": {
+      "phone": "123-456-7890",
+      "email": "jobs@example.com"
+    }
+  },
+  {
+    "id": 6,
+    "company_logo": "https://i.ibb.co/rM9Zyw3/netflix-4-1.png",
+    "job_title": "UI/UX Designer",
+    "company_name": "Example Tech Company 3",
+    "remote_or_onsite": "Onsite",
+    "location": "San Francisco, CA",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$90,000 - $110,000",
+    "job_description": "We are seeking a talented UI/UX designer to join our team and help create beautiful and intuitive interfaces for our products. The ideal candidate should have experience in user research, wireframing, and prototyping.",
+    "job_responsibility": "Responsibilities include designing user interfaces, conducting user research, and creating prototypes.",
+    "educational_requirements": "Bachelor's degree in design or related field",
+    "experiences": "3+ years of experience in UI/UX design",
+    "contact_information": {
+      "phone": "123-456-7890",
+      "email": "jobs@example.com"
+    }
+  }
+]
