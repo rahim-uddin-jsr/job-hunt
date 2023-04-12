@@ -3,8 +3,8 @@ import React from "react";
 const Header = () => {
   return (
     <div className="w-full header-bg-gradient">
-      <div className="hero mx-50 py-36">
-        <div className="hero-content  flex-col lg:flex-row-reverse">
+      <div className="hero py-36">
+        <div className="hero-content flex-col xl:flex-row-reverse max-w-[1280px]">
           <img
             loading="lazy"
             src="https://i.ibb.co/zbhLJpp/P3-OLGJ1-copy-1.png"

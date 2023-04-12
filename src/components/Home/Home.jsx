@@ -8,8 +8,10 @@ const Home = () => {
     <>
       <Header></Header>
 
-      <JobCategorys />
-      <FeaturedJobs />
+      <div className="max-w-[1280px] mx-auto">
+        <JobCategorys />
+        <FeaturedJobs />
+      </div>
     </>
   );
 };

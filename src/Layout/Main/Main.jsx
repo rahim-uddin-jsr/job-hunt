@@ -6,12 +6,12 @@ import Nav from "../../sheared/Nav/Nav";
 
 const Main = () => {
   return (
-    <>
+    <div className="">
       <Nav />
       <Outlet />
       <Footer />
       <Toaster />
-    </>
+    </div>
   );
 };
 

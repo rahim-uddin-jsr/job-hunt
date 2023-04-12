@@ -64,27 +64,32 @@ const AppliedJobs = () => {
   return (
     <>
       <Header>Applied Jobs</Header>
-
-      <div className="flex justify-end">
-        <select
-          defaultValue={"Filter By"}
-          onChange={handleSort}
-          ref={selectRef}
-          className="mb-4 rounded-none select select-bordered select-sm w-full max-w-[150px]"
-        >
-          <option value={"Filter By"} disabled>
-            Filter By
-          </option>
-          <option>Remote</option>
-          <option>Onsite</option>
-        </select>
+      <div className="max-w-[1280px] mx-auto">
+        <div className="flex justify-end">
+          <select
+            defaultValue={"Filter By"}
+            onChange={handleSort}
+            ref={selectRef}
+            className="mb-4 rounded-none select select-bordered select-sm w-full max-w-[150px]"
+          >
+            <option value={"Filter By"} disabled>
+              Filter By
+            </option>
+            <option>Remote</option>
+            <option>Onsite</option>
+          </select>
+        </div>
+        {!sortBy &&
+          allJobs.map((job) => <SingleAppliedJObs key={job.id} job={job} />)}
+        {sortByRemote &&
+          sortByRemote.map((job) => (
+            <SingleAppliedJObs key={job.id} job={job} />
+          ))}
+        {sortByOnsite &&
+          sortByOnsite.map((job) => (
+            <SingleAppliedJObs key={job.id} job={job} />
+          ))}
       </div>
-      {!sortBy &&
-        allJobs.map((job) => <SingleAppliedJObs key={job.id} job={job} />)}
-      {sortByRemote &&
-        sortByRemote.map((job) => <SingleAppliedJObs key={job.id} job={job} />)}
-      {sortByOnsite &&
-        sortByOnsite.map((job) => <SingleAppliedJObs key={job.id} job={job} />)}
     </>
   );
 };
