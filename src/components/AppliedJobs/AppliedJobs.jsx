@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import Header from "../../sheared/Header";
-import { getShoppingCart } from "../../utilities/fakeDB";
+import { getAppliedJobs } from "../../utilities/fakeDB";
 import SingleAppliedJObs from "./SingleAppliedJObs";
 
 const AppliedJobs = () => {
   const [sortBy, setSortBy] = useState(false);
   const [sortByRemote, setSortByRemote] = useState(false);
   const [sortByOnsite, setSortByOnsite] = useState([]);
-  const appliesJobsId = getShoppingCart();
+  const appliesJobsId = getAppliedJobs();
   const [allJobs, setAllJobs] = useState([]);
   const [allSortedJobs, setSortedAllJobs] = useState([]);
   const selectRef = useRef("");
@@ -67,12 +67,12 @@ const AppliedJobs = () => {
 
       <div className="flex justify-end">
         <select
-          defaultValue="Filter By"
+          defaultValue={"Filter By"}
           onChange={handleSort}
           ref={selectRef}
           className="mb-4 rounded-none select select-bordered select-sm w-full max-w-[150px]"
         >
-          <option disabled selected>
+          <option value={"Filter By"} disabled>
             Filter By
           </option>
           <option>Remote</option>

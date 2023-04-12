@@ -2,16 +2,16 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="header-bg-gradient py-36">
-      <div className="hero">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+    <div className="w-full header-bg-gradient">
+      <div className="hero mx-50 py-36">
+        <div className="hero-content  flex-col lg:flex-row-reverse">
           <img
             loading="lazy"
             src="https://i.ibb.co/zbhLJpp/P3-OLGJ1-copy-1.png"
             className="object-cover lg:w-1/2 rounded-lg shadow-2xl"
           />
           <div className="lg:w-1/2 ">
-            <h1 className="text-5xl font-bold">
+            <h1 className="text-2xl mt-8 lg:mt-0 md:text-5xl font-bold">
               One Step Closer To Your Dream Job
             </h1>
             <p className="py-6">

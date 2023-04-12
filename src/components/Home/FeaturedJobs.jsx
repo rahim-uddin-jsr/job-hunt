@@ -27,7 +27,7 @@ const FeaturedJobs = () => {
       {length == 4 && (
         <button
           onClick={handleShowAll}
-          className=" btn btn-bg-gradient border-0"
+          className="m-12 md:text-2xl btn md:btn-lg btn-bg-gradient border-0"
         >
           See All Jobs
         </button>

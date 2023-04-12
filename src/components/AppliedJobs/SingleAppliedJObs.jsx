@@ -36,7 +36,7 @@ const SingleAppliedJObs = ({ job }) => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              stroke-width="1"
+              strokeWidth="1"
             />
             {location}
             <CurrencyDollarIcon
@@ -44,7 +44,7 @@ const SingleAppliedJObs = ({ job }) => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              stroke-width="1"
+              strokeWidth="1"
             />
             {salary}
           </div>

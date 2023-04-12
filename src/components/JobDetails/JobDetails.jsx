@@ -6,9 +6,10 @@ import {
   PhoneIcon,
 } from "@heroicons/react/24/solid";
 import React, { useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
 import { useLoaderData } from "react-router-dom";
 import Header from "../../sheared/Header";
-import { addToDb } from "../../utilities/fakeDB";
+import { addToDb, getAppliedJobs } from "../../utilities/fakeDB";
 
 const JobDetails = () => {
   const [details, setDetails] = useState({});
@@ -34,8 +35,16 @@ const JobDetails = () => {
   } = details;
 
   const handleApplyJob = () => {
+    const appliedJobs = getAppliedJobs();
+    for (const key in appliedJobs) {
+      if (key == id) {
+        toast.error("already applied");
+        return;
+      }
+    }
     addToDb(id);
-    alert("success");
+    toast.success("added");
+    console.log({ appliedJobs });
   };
   return (
     <>
@@ -63,7 +72,7 @@ const JobDetails = () => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              stroke-width="1"
+              strokeWidth="1"
               className="mr-2 h-6 w-6 text-blue-500"
             />
             <span>Salary : </span>
@@ -74,7 +83,7 @@ const JobDetails = () => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              stroke-width="1"
+              strokeWidth="1"
               className="mr-2 h-6 w-6 text-blue-500"
             />
             <span>Job Title : </span>
@@ -87,7 +96,7 @@ const JobDetails = () => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              stroke-width="1"
+              strokeWidth="1"
               className="mr-2 h-6 w-6 text-blue-500"
             />
             Phone : <span></span>
@@ -98,7 +107,7 @@ const JobDetails = () => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              stroke-width="1"
+              strokeWidth="1"
               className="h-6 w-6 text-blue-500 mr-2"
             />
             <span className="mb-4">Email : </span>
@@ -109,7 +118,7 @@ const JobDetails = () => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              stroke-width="1"
+              strokeWidth="1"
               className="h-10 w-10 text-blue-500 mr-2"
             />
             <span className="mb-4">Address : </span>

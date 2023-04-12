@@ -26,6 +26,12 @@ const Nav = () => {
             tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
+            <Link
+              to="/"
+              className="btn md:hidden btn-ghost normal-case text-3xl font-[800px]"
+            >
+              JobHunt
+            </Link>
             <li>
               <NavLink
                 to="/"
@@ -70,7 +76,7 @@ const Nav = () => {
         </div>
         <Link
           to="/"
-          className="btn btn-ghost normal-case text-3xl font-[800px]"
+          className="btn hidden md:block btn-ghost normal-case text-3xl font-[800px]"
         >
           JobHunt
         </Link>
