@@ -5,7 +5,7 @@ import SingleAppliedJObs from "./SingleAppliedJObs";
 
 const AppliedJobs = () => {
   const [sortBy, setSortBy] = useState(false);
-  const [sortByRemote, setSortByRemote] = useState([]);
+  const [sortByRemote, setSortByRemote] = useState(false);
   const [sortByOnsite, setSortByOnsite] = useState([]);
   const appliesJobsId = getShoppingCart();
   const [allJobs, setAllJobs] = useState([]);
@@ -42,6 +42,7 @@ const AppliedJobs = () => {
             return -1;
           }
         });
+        setSortByOnsite(false);
         setSortByRemote(fs);
       } else {
         setSortByOnsite(true);
@@ -55,6 +56,7 @@ const AppliedJobs = () => {
             return 1;
           }
         });
+        setSortByRemote(false);
         setSortByOnsite(fs);
       }
     }

@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -68,9 +68,12 @@ const Nav = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-3xl font-[800px]">
+        <Link
+          to="/"
+          className="btn btn-ghost normal-case text-3xl font-[800px]"
+        >
           JobHunt
-        </a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal font-bold px-1">
