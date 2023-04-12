@@ -19,7 +19,7 @@ const JobDetails = () => {
     )
       .then((res) => res.json())
       .then((data) => {
-        const d = data.find((dD) => dD.id == id);
+        const d = data?.find((dD) => dD.id == id);
         setDetails(d);
       });
   }, []);

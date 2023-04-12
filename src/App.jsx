@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import AppliedJobs from "./components/AppliedJobs/AppliedJobs";
 import Blog from "./components/Blog/Blog";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Home from "./components/Home/Home";
 import JobDetails from "./components/JobDetails/JobDetails";
 import Main from "./Layout/Main/Main";
@@ -13,6 +14,8 @@ function App() {
     {
       path: "/",
       element: <Main />,
+      errorElement: <ErrorPage />,
+
       children: [
         {
           path: "/",
