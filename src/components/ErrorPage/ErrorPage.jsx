@@ -14,10 +14,6 @@ const ErrorPage = () => {
         <div className="flex flex-col items-center justify-center px-5 mx-auto my-8">
           <Lottie animationData={groovyWalkAnimation} />
           <div className="max-w-md text-center">
-            {/* <h2 className="mb-8 font-extrabold text-9xl text-yellow-500">
-            <span className="sr-only">Error</span>
-            {status || 404}
-          </h2> */}
             <p className="text-2xl font-semibold md:text-3xl text-red-800 mb-8">
               {error?.message}
             </p>

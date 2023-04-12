@@ -36,6 +36,16 @@ const Nav = () => {
                 Home
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/statistics"
+                className={({ isActive }) =>
+                  isActive ? "text-purple-400" : "text-black"
+                }
+              >
+                Statistics
+              </NavLink>
+            </li>
             <li tabIndex={0}>
               <NavLink
                 to="/applied-jobs"
@@ -72,6 +82,16 @@ const Nav = () => {
               }
             >
               Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/statistics"
+              className={({ isActive }) =>
+                isActive ? "text-purple-400" : "text-black"
+              }
+            >
+              Statistics
             </NavLink>
           </li>
           <li tabIndex={0}>
