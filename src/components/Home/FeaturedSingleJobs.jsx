@@ -31,7 +31,7 @@ const FeaturedSingleJobs = ({ job }) => {
         </div>
         <div className="flex items-center">
           <MapPinIcon
-            class="h-6 me-2 w-6 text-gray-500"
+            className="h-6 me-2 w-6 text-gray-500"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -39,7 +39,7 @@ const FeaturedSingleJobs = ({ job }) => {
           />
           {location}
           <CurrencyDollarIcon
-            class="h-6 me-2 ms-4 w-6 text-gray-500"
+            className="h-6 me-2 ms-4 w-6 text-gray-500"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
